@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="1dp">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+
+        android:orientation="vertical">
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/item_miniatura"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="visible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="precio"
+            android:id="@+id/item_precio"
+            android:layout_gravity="right|top"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/super_fav"
+            android:layout_alignParentBottom="true"
+            android:layout_toLeftOf="@+id/item_precio"
+            android:layout_toStartOf="@+id/item_precio"
+            android:src="@drawable/carrito_no"
+            android:visibility="visible" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/accentColor"
+        android:orientation="vertical"
+        android:padding="@dimen/espacio_norma_1"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/item_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Marca"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/prod_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead.Inverse"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+</LinearLayout>

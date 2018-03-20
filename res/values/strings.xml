@@ -1,0 +1,181 @@
+<resources>
+
+    <string name="app_name">"Copralia"</string>
+    <string name="account_type">net.copralianetwork.copralia.account</string>
+    <string name="provider_authority">net.copralianetwork.copralia.copralia</string>
+    <string name="only_one_account">La cuenta de copralia ya está añadida</string>
+    <string name="boton_positivo">Aceptar</string>
+    <string name="boton_negativo">Rechazar</string>
+    <string name="error_campo_vacio">No has rellenado el campo</string>
+
+    <string name="login_email">Email</string>
+    <string name="login_pass">Contraseña</string>
+    <string name="login_button">Iniciar Sesión</string>
+    <string name="login_register">¿No tienes una cuenta? Registrate aquí</string>
+    <string name="login_error_2">¡Ups! Tu contraseña no es correcta</string>
+    <string name="login_error_3">¡Ups! No hemos encontrado este email</string>
+    <string name="login_error_4">¡Ups! Se ha producido un error desconocido</string>
+    <string name="login_error_5">Introduce tu email</string>
+    <string name="login_error_6">Introduce tu contraseña</string>
+
+
+
+    <string name="registro_nombre">Nombre</string>
+    <string name="registro_email">Email</string>
+    <string name="registro_pass">Contraseña</string>
+    <string name="registro_button">Registrarme</string>
+    <string name="registro_login">¿Tienes una cuenta? Inicia sesión</string>
+    <string name="registro_error_1">¡Ups! El email introducido no es valido</string>
+    <string name="registro_error_2">¡Ups! Introduce una contraseña de almenos 8 caracteres</string>
+    <string name="registro_error_3">¡Ups! Introduce tu nombre</string>
+    <string name="registro_error_4">¡Ups! Este email ya esta en uso</string>
+    <string name="registro_error_5">¡Ups! Se ha producido un error desconocido</string>
+    <string name="registro_correcto">¡Ya puedes iniciar sesión!</string>
+
+
+    <string name="listas_nueva_carga">Creando lista...</string>
+    <string name="listas_nueva_nombre">Nueva lista</string>
+    <string name="listas_nueva_creada"> creada</string>
+    <string name="listas_nueva_error">Error creando la lista</string>
+    <string name="listas_nueva_error_nombre">¡Escribe un nombre!</string>
+
+    <string name="lista_productos">Artículos</string>
+    <string name="lista_total">Total</string>
+    <string name="lista_completed_title">¡Lista completada!</string>
+    <string name="lista_completed_desc">Estan marcados todos los elementos de la lista</string>
+    <string name="lista_completed_ver">Ver lista</string>
+    <string name="lista_completed_vaciar">Vaciar lista</string>
+
+    <string name="lista_empty_title">¡Lista vacia!</string>
+    <string name="lista_empty_desc">Empieza a llenar tu lista ahora mismo</string>
+
+    <string name="lista_vaciar">Vaciar lista</string>
+    <string name="lista_vaciar_msg">Se perderán todos los elementos de la lista. Esta acción no se puede deshacer</string>
+
+    <string name="lista_cantidad">Modificar cantidad</string>
+
+    <string name="lista_actualizar">Actualizar lista</string>
+    <string name="lista_actualizar_progress">Actualizando lista</string>
+
+    <string name="lista_error_add">Error al añadir el producto</string>
+    <string name="lista_no_acceso">Sin permisos</string>
+    <string name="lista_eliminar">Eliminar lista</string>
+    <string name="lista_invitar">Invitar a lista</string>
+    <string name="lista_abandonar">Abandonar lista</string>
+    <string name="lista_invitar_titulo">Invitar a lista</string>
+    <string name="lista_invitar_mensaje">Introduce el email de la persona a la que deseas invitar</string>
+    <string name="lista_invitar_tuMismo">No te puedes autoinvitar</string>
+    <string name="lista_invitar_yaInvitado">Ya esta invitado!</string>
+    <string name="lista_invitar_noRegistrado">Este usuario no esta registrado en copralia</string>
+    <string name="lista_invitar_noPrivilegios">No puedes invitar a esta lista. No eres un administrador</string>
+    <string name="lista_invitar_correcto">Has invitado correctamente a </string>
+    <string name="lista_invitar_cargando">Invitando</string>
+
+
+    <string name="cuenta_tab_perfil">Perfil</string>
+    <string name="cuenta_tab_supers">Supermercados</string>
+
+
+    <string name="cuenta_perfil_informacion_titulo">Información cuenta</string>
+    <string name="cuenta_perfil_contrasena_titulo">Contraseña</string>
+    <string name="cuenta_perfil_contrasena_texto">Cambia tu contraseña</string>
+    <string name="cuenta_perfil_contrasena_dialog_titulo">Cambiar contraseña</string>
+    <string name="cuenta_perfil_contrasena_dialog_vieja">Contraseña actual</string>
+    <string name="cuenta_perfil_contrasena_dialog_nueva">Nueva contraseña</string>
+    <string name="cuenta_perfil_contrasena_dialog_repetir">Repetir contraseña</string>
+    <string name="cuenta_perfil_contrasena_dialog_rellena">¡Rellena todos los campos!</string>
+    <string name="cuenta_perfil_contrasena_dialog_coinciden">¡Las contraseñas no coinciden!</string>
+    <string name="cuenta_perfil_contrasena_carga_titulo">Cambiando contraseña</string>
+    <string name="cuenta_perfil_contrasena_carga_texto">Espere por favor</string>
+    <string name="cuenta_perfil_contrasena_cambiada">¡Se ha cambiado tu contraseña!</string>
+    <string name="cuenta_perfil_contrasena_incorrecta">¡Ups! Tu contraseña no es correcta</string>
+    <string name="cuenta_perfil_contrasena_invalida">¡Ups! Esa contraseña no es valida</string>
+
+
+    <string name="cuenta_perfil_favoritos_titulo">Favoritos</string>
+    <string name="cuenta_perfil_favoritos_texto">Borra tus favoritos</string>
+
+    <string name="cuenta_perfil_favoritos_dialog_titulo">Eliminar favoritos</string>
+    <string name="cuenta_perfil_favoritos_dialog_texto">Esta accion no se puede deshacer y eliminará TODOS tus productos favoritos</string>
+
+
+    <string name="cuenta_supers_favorito_titulo">Supermercado Favorito</string>
+    <string name="cuenta_supers_favorito_texto">Cambiar</string>
+    <string name="cuenta_upers_busqueda_titulo">Modo búsqueda</string>
+    <string name="cuenta_supers_busqueda_texto">Cambia tu contraseña</string>
+    <string name="cuenta_supers_historial_titulo">Historial</string>
+    <string name="cuenta_supers_historial_texto">Borrar historial de supermercados</string>
+
+
+    <string name="prodfav_activity_nombre">Favoritos</string>
+    <string name="prodfav_activity_actualizar">Actualizar</string>
+    <string name="prodfav_activity_vaciar">Eliminar todos</string>
+
+    <string name="prod_report_type_1">Categoría incorrecta</string>
+    <string name="prod_report_type_2">Precio incorrecto</string>
+    <string name="prod_report_type_3">Imagen incorrecta</string>
+    <string name="prod_report_type_4">Información incorrecta</string>
+    <string name="prod_report_type_5">Otros</string>
+    <string name="prod_report_otros">Introduce texto</string>
+    <string name="prod_report_ok">Reporte recivido correctamente</string>
+
+    <string name="producto_infoa" >Información nutricional</string>
+
+
+
+    <string name="shop_tab_info">Información</string>
+    <string name="shop_tab_cards">Tarjetas</string>
+    <string name="shop_tab_shops">Tiendas</string>
+
+
+
+
+
+    <string-array name="etiquetas">
+        <item>Comida</item>
+        <item>Transporte</item>
+        <item>Diversión</item>
+    </string-array>
+
+
+
+
+
+
+
+    <string name="error_conexion">Error conectando con el servidor</string>
+    <string name="error_servidor">Error en el servidor</string>
+    <string name="error_desconocido">Se ha producido un error desconocido</string>
+
+
+    <string name="ofertas_titulo">Ofertas en tu zona</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_search">Buscar</string>
+    <string name="menu_codigo">Buscar</string>
+
+    <string name="busqueda_no_resultados">¡No hemos encontrado nada!</string>
+
+    <string name="menu_text_ofertas">Ofertas</string>
+    <string name="menu_text_lista">Mi lista</string>
+    <string name="menu_text_cuenta">Mi Cuenta</string>
+    <string name="menu_text_favoritos">Favoritos</string>
+    <string name="item_configuracion">Configuración</string>
+
+
+    <string name="titulo_tab_platillos">PLATILLOS</string>
+    <string name="titulo_tab_bebidas">BEBIDAS</string>
+    <string name="titulo_tab_postres">POSTRES</string>
+
+    <string name="titulo_tab_perfil">PERFIL</string>
+    <string name="titulo_tab_direcciones">DIRECCIONES</string>
+    <string name="titulo_tab_tarjetas">TARJETAS</string>
+
+    <string name="texto_no_tarjetas">No tienes ninguna tarjeta asociada</string>
+
+    <string name="etiqueta_carrito">Carrito</string>
+
+    <string name="texto_cambiar_contrasena">Cambia tu contraseña</string>
+    <string name="etiqueta_contrasena">Contraseña</string>
+    <string name="etiqueta_info_usuario">Información del usuario</string>
+
+</resources>

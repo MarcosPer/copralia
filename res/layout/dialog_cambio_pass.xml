@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cuenta_perfil_contrasena_dialog_titulo"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/dialog_title"
+        android:layout_gravity="center_horizontal" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/universal_margin">
+        <EditText
+            android:id="@+id/oldpass"
+            android:hint="@string/cuenta_perfil_contrasena_dialog_vieja"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/universal_margin">
+        <EditText
+            android:id="@+id/pass"
+            android:hint="@string/cuenta_perfil_contrasena_dialog_nueva"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/universal_margin">
+        <EditText
+            android:id="@+id/pass_repeat"
+            android:hint="@string/cuenta_perfil_contrasena_dialog_repetir"
+            android:inputType="text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

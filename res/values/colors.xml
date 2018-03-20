@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="window_background">#ffffff</color>
+<!--
+    <color name="primaryDarkColor">#EF6C00</color>
+    <color name="primaryColor">#FF9800</color>
+    <color name="accentColor">#CA5100</color>
+    <color name="headerColor">#CA5100</color>
+    <color name="headerColor">#E65100</color>
+-->
+<!--
+    <color name="primaryDarkColor">#F57C00</color>
+    <color name="primaryColor">#FF9800</color>
+    <color name="accentColor">#58A539</color>
+    <color name="headerColor">#CA5100</color>
+    <color name="footerColor">#FFAB40</color>
+    <color name="footerColor">#FFFFFF</color>-->
+
+    <color name="primaryDarkColor">#388E3C</color>
+    <color name="primaryColor">#4CAF50</color>
+    <color name="accentColor">#EF6C00</color>
+    <color name="headerColor">#407729</color>
+    <color name="footerColor">#dee4ee</color>
+
+
+
+    <color name="linkColor">#0b84aa</color>
+    <color name="errorColor">#E60000</color>
+
+    <color name="color_light">#ffffff</color>
+
+
+    <color name="refresh1">#66BB6A</color>
+    <color name="refresh2">#4CAF50</color>
+    <color name="refresh3">#43A047</color>
+    <color name="refresh4">#388E3C</color>
+
+
+    <color name="title_color">#000000</color>
+
+    <color name="gray_background">#757575</color>
+    <color name="yellow">#FFBB33</color>
+
+    <!--
+        <color name="primaryColor">#4CAF50</color>
+        <color name="primaryDarkColor">#388E3C</color>
+        <color name="lif">#C8E6C9</color>
+        <color name="accentColor">#9E9E9E</color>
+        <color name="primary_text">#212121</color>
+        <color name="headerColor">#727272</color>
+        <color name="footerColor">#689F38</color>
+        <color name="icons">#FFFFFF</color>
+        <color name="divider">#B6B6B6</color>
+    -->
+
+    <color name="translucent_scrim_top">#26000000</color>
+    <color name="translucent_scrim_top_center">#0C000000</color>
+    <color name="translucent_scrim_bottom">#2A000000</color>
+    <color name="translucent_scrim_bottom_center">#0D000000</color>
+
+
+</resources>

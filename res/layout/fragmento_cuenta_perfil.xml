@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/footerColor">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/footerColor"
+        android:orientation="vertical"
+        android:padding="@dimen/espacio_norma_1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="8dp"
+            android:text="@string/cuenta_perfil_informacion_titulo"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardUseCompatPadding="true">
+
+
+            <LinearLayout
+                android:id="@+id/card_perfil"
+                android:clickable="true"
+                android:background="?android:selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="2"
+                    android:padding="@dimen/espacio_norma_1"
+                    android:rowCount="2"
+                    android:useDefaultMargins="false">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="32dp"
+                        android:layout_marginRight="@dimen/espacio_norma_2"
+                        android:src="@drawable/usuario" />
+
+                    <TextView
+                        android:id="@+id/nombre_perfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="32dp"
+                        android:text="Marcos Per"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/email" />
+
+                    <TextView
+                        android:id="@+id/email_perfil"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="marcosperg@gmail.com"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </GridLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/titulo_contrasena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/espacio_norma_2"
+            android:paddingTop="@dimen/espacio_norma_1"
+            android:text="@string/cuenta_perfil_contrasena_titulo"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:id="@+id/card_pass"
+                android:clickable="true"
+                android:background="?android:selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/espacio_norma_1">
+
+                <ImageView
+                    android:id="@+id/icon_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/contrasena" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/icon_pass"
+                    android:text="@string/cuenta_perfil_contrasena_texto"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/indicador_derecho" />
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/espacio_norma_2"
+            android:paddingTop="@dimen/espacio_norma_1"
+            android:text="@string/cuenta_perfil_favoritos_titulo"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardUseCompatPadding="true">
+            <RelativeLayout
+                android:id="@+id/card_fav"
+                android:clickable="true"
+                android:background="?android:selectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/espacio_norma_1">
+                <ImageView
+                    android:id="@+id/icono_fav"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/favorite_on" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_toRightOf="@+id/icono_fav"
+                    android:text="@string/cuenta_perfil_favoritos_texto"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/indicador_derecho" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

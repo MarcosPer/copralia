@@ -1,0 +1,52 @@
+<resources>
+
+
+    <style name="Theme.Copralia" parent="@style/Base.AppTheme" />
+
+    <style name="Base.AppTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryDarkColor</item>
+        <item name="colorAccent">@color/accentColor</item>
+
+
+    </style>
+
+    <style name="Theme.ConNavigationDrawer" parent="Base.AppTheme"/>
+
+
+
+    <style name="Widget.CardContent" parent="android:Widget">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Copralia.Productos" parent="Theme.Copralia">
+        <item name="android:textColorPrimaryInverse">#000</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+    <style name="Copralia.ProdActivityTitle" parent="Theme.Copralia">
+        <item name="android:textColor">#FFF</item>
+        <item name="android:shadowColor">#757575</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Copralia.Title" parent="Theme.Copralia">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/primaryColor</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="Scanner.Theme" parent="Theme.Copralia">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

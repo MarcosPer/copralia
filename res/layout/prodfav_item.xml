@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/data_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:foreground="?android:selectableItemBackground">
+
+        <TextView
+            android:id="@+id/prod_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textAppearance="?attr/textAppearanceListItem" />
+
+        <TextView
+            android:id="@+id/item_marca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/prod_name"
+            android:layout_below="@+id/prod_name"
+             />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/list_item_padding_sides"
+        android:paddingRight="@dimen/list_item_padding_sides"
+        android:id="@+id/undo_container"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_delete"
+            android:gravity="center_vertical"
+            android:text="Eliminado"
+            android:clickable="false"
+            android:layout_weight="2"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/txt_undo"
+            android:text="Deshacer"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:textColor="@color/yellow"/>
+    </LinearLayout>
+</FrameLayout>
+
+
+

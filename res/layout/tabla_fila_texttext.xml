@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    android:id="@+id/producto_infoa_fila"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_column="0"
+        android:padding="3dip"
+        android:id="@+id/tabla_fila_a"
+        android:text="d"
+    />
+
+    <TextView
+        android:layout_column="2"
+        android:gravity="left"
+        android:padding="3dip"
+        android:id="@+id/tabla_fila_b"
+        android:text="d"
+    />
+</TableRow>

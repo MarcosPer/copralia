@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ListView
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/linearLayout" />
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        xmlns:fab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp"
+        android:clickable="true"
+        android:id="@+id/add_menu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        fab:menu_colorNormal="@color/accentColor"
+        app:elevation="6dp"
+        app:pressedTranslationZ="12dp"
+        >
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_menu_busqueda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/busqueda"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/accentColor"
+            fab:fab_label="Búsqueda" />
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/add_menu_codigobarras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/codigobarras"
+            fab:fab_size="mini"
+            fab:fab_colorNormal="@color/accentColor"
+            fab:fab_label="Escanear" />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+
+
+
+
+</RelativeLayout>
+

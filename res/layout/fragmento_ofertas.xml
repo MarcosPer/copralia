@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/headerColor"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/ofertas_titulo"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/color_light" />
+    <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ofertas_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/reciclador"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</LinearLayout>

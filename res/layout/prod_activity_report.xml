@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/report_actions1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:onClick= "selectReportType"
+            >
+
+            <ImageView
+                android:id="@+id/report_type_1"
+                android:layout_width="@dimen/prod_report_type_size"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/reporte_categoria"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:text="@string/prod_report_type_1"
+                android:textAlignment="center"
+                android:maxLines="2"
+                android:lines="2"
+                android:textSize="18sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:onClick= "selectReportType"
+            >
+
+            <ImageView
+                android:id="@+id/report_type_2"
+                android:layout_width="@dimen/prod_report_type_size"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/report_precio"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:text="@string/prod_report_type_2"
+                android:textAlignment="center"
+                android:maxLines="2"
+                android:lines="2"
+                android:textSize="18sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:onClick= "selectReportType"
+            >
+
+            <ImageView
+                android:id="@+id/report_type_3"
+                android:layout_width="@dimen/prod_report_type_size"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/report_image"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:text="@string/prod_report_type_3"
+                android:textAlignment="center"
+                android:maxLines="2"
+                android:lines="2"
+                android:textSize="18sp" >
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="15dp"
+        android:id="@+id/report_actions2"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/report_actions1"
+        android:paddingBottom="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:onClick= "selectReportType"
+            >
+
+            <ImageView
+                android:id="@+id/report_type_4"
+                android:layout_width="@dimen/prod_report_type_size"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/reporte_info"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:text="@string/prod_report_type_4"
+                android:textAlignment="center"
+                android:maxLines="2"
+                android:lines="2"
+                android:textSize="18sp" >
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:onClick= "selectReportType"
+            >
+
+            <ImageView
+                android:id="@+id/report_type_5"
+                android:layout_width="@dimen/prod_report_type_size"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                app:srcCompat="@drawable/report_otros"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:text="@string/prod_report_type_5"
+                android:textAlignment="center"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:lines="2"
+                android:textSize="18sp" >
+            </TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/report_actions2"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/report_otrotext"
+            android:hint="@string/prod_report_otros"
+            android:lines="3"
+            android:visibility="gone" />
+
+        <Spinner
+            android:layout_height="wrap_content"
+            android:id="@+id/report_store"
+            android:layout_width="250dp"
+            android:visibility="gone"
+        />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

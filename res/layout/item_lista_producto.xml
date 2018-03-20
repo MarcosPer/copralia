@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_background"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:paddingLeft="@dimen/list_item_padding_sides"
+        android:paddingRight="@dimen/list_item_padding_sides"
+        android:id="@+id/undo_container"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/txt_delete"
+            android:gravity="center_vertical"
+            android:text="Eliminado"
+            android:clickable="false"
+            android:layout_weight="2"
+            android:hapticFeedbackEnabled="true"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/txt_undo"
+            android:text="Deshacer"
+            android:clickable="false"
+            android:layout_weight="1"
+            android:textColor="@color/yellow"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/data_container"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:orientation="vertical"
+            android:background="@android:color/white"
+            android:foreground="?android:selectableItemBackground">
+
+            <TextView
+                android:id="@+id/prod_marca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/prod_name"
+                android:layout_alignStart="@+id/prod_name"
+                android:layout_below="@+id/prod_name"
+                android:text="Marca"
+                />
+
+            <TextView
+                android:id="@+id/prod_cantprice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1x1.15"
+                android:layout_below="@+id/prod_name"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/prod_check"
+                android:checked="false"
+                android:textAppearance="@style/TextAppearance.AppCompat"
+                android:focusable="false"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/prod_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:lines="1"
+                android:minLines="1"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/prod_check"
+                android:layout_toEndOf="@+id/prod_check" />
+
+        </RelativeLayout>
+        <View
+            android:id="@+id/prod_list_divisor"
+            android:layout_width="match_parent"
+            android:background="?android:attr/listDivider"
+            android:layout_height="0.5dp" />
+    </LinearLayout>
+
+
+</FrameLayout>
+
+
+

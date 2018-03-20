@@ -1,0 +1,45 @@
+<resources>
+
+    <dimen name="espacio_norma_1">16dp</dimen>
+    <dimen name="espacio_norma_2">8dp</dimen>
+    <dimen name="universal_margin">16dp</dimen>
+
+    <dimen name="padding_izquierdo_cabecera">16dp</dimen>
+
+    <dimen name="altura_item_oferta">150dp</dimen>
+
+    <dimen name="ancho_logo">200dp</dimen>
+
+        <dimen name="detail_backdrop_height">316dp</dimen>
+        <dimen name="card_margin">16dp</dimen>
+        <dimen name="fab_margin">16dp</dimen>
+        <dimen name="list_item_avatar_size">40dp</dimen>
+
+
+    <dimen name="list_item_padding_sides">16dp</dimen>
+    <dimen name="list_item_height">80dp</dimen>
+
+
+    <dimen name="margen_estandar">16dp</dimen>
+    <dimen name="altura_item">122dp</dimen>
+    <dimen name="margen_izquierda_contenido">10dp</dimen>
+    <dimen name="ancho_miniatura">120dp</dimen>
+    <dimen name="ancho_panel_lista">512dp</dimen>
+
+    <dimen name="prod_report_type_size">50dp</dimen>
+    
+    <dimen name="fab_simple_margin">8dp</dimen>
+    <dimen name="fab_double_margin">16dp</dimen>
+
+    <dimen name="dialog_padding">10dp</dimen>
+
+
+
+
+    <dimen name="toolbar_size">56dp</dimen>
+    <dimen name="searchbar_size">60dp</dimen>
+
+
+
+
+</resources>

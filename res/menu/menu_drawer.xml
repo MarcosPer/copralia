@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_item_ofertas"
+            android:checked="true"
+            android:icon="@drawable/ofertas"
+            android:title="@string/menu_text_ofertas" />
+        <item
+            android:id="@+id/menu_item_lista"
+            android:icon="@drawable/lista"
+            android:title="@string/menu_text_lista" />
+        <item
+            android:id="@+id/menu_item_favoritos"
+            android:icon="@drawable/favorite_on"
+            android:title="@string/menu_text_favoritos" />
+        <item
+            android:id="@+id/menu_item_cuenta"
+            android:icon="@drawable/cuenta"
+            android:title="@string/menu_text_cuenta" />
+        <item
+            android:id="@+id/menu_item_config"
+            android:icon="@drawable/configuracion"
+            android:title="@string/item_configuracion" />
+        <item
+            android:id="@+id/menu_item_test1"
+            android:icon="@drawable/historial"
+            android:title="Test1" />
+        <item
+            android:id="@+id/menu_item_test2"
+            android:icon="@drawable/ofertas"
+            android:title="Test2" />
+        <item
+            android:id="@+id/menu_item_test3"
+            android:icon="@drawable/lista"
+            android:title="Test3" />
+    </group>
+
+</menu>

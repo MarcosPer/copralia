@@ -1,0 +1,71 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/coordinator">
+
+        <!-- Contenido Principal -->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"
+            android:background="?attr/colorPrimary"
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_size"
+            />
+
+            <View
+                android:id="@+id/searchbar_fondo"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/searchbar_size">
+            </View>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:id="@+id/contenedor_principal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/floating_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_menu="@menu/menu_searchbar"
+        app:floatingSearch_searchBarMarginLeft="5dp"
+        app:floatingSearch_searchBarMarginTop="56dp"
+        app:floatingSearch_searchBarMarginRight="5dp"
+        app:floatingSearch_searchHint="¿Que estas buscando, hijoputa?"
+        app:floatingSearch_suggestionsListAnimDuration="250"
+        app:floatingSearch_showSearchKey="true"
+        app:floatingSearch_leftActionMode="showSearch"
+        app:floatingSearch_dimBackground="true"
+        app:floatingSearch_close_search_on_keyboard_dismiss="true"/>
+
+    <!-- Menú Deslizante -->
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/cabecera_drawer"
+        app:menu="@menu/menu_drawer" />
+
+</android.support.v4.widget.DrawerLayout>

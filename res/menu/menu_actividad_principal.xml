@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ActividadPrincipal">
+    <item
+        android:id="@+id/menu_principal_settings"
+        android:orderInCategory="100"
+        android:title="@string/menu_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_principal_busqueda"
+        android:icon="@drawable/busqueda"
+        android:orderInCategory="1"
+        android:title="@string/menu_search"
+        app:actionViewClass="android.widget.SearchView"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_principal_lista_nueva"
+        android:icon="@drawable/icono_lista_nueva"
+        android:orderInCategory="3"
+        android:title="passsw"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/menu_principal_escanear"
+        android:icon="@drawable/codigobarras_blanco"
+        android:orderInCategory="2"
+        android:title="@string/menu_codigo"
+        app:showAsAction="always"/>
+
+
+
+
+</menu>

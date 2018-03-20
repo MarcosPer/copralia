@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/img_slideshow_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/img_slide_header_layout"
+    >
+
+
+    <net.copralianetwork.copralia.Activities.Principal.Fragment.Inicio.BannerView
+        android:id="@+id/inicio_slider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <net.copralianetwork.copralia.Utils.Slider.SliderIndicator
+        android:id="@+id/slider_indicator"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2.5dp"/>
+
+</FrameLayout>
